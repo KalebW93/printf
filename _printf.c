@@ -1,6 +1,7 @@
 #include <stdarg.h>
 #include "main.h"
 #include <stddef.h>
+#include <stdio.h>
 
 /**
  * _printf - prints formated text.
@@ -45,6 +46,6 @@ int _printf(const char *format, ...)
 			i += 2;
 		}
 	}
-
+	va_end(data);
 	return (count);
 }
